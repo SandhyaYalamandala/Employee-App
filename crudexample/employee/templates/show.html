@@ -12,8 +12,9 @@
     <tr>  
         <th>Employee ID</th>  
         <th>Employee Name</th>  
-        <th>Employee Email</th>  
-        <th>Employee Contact</th>  
+        <th>Employee Email</th>
+        <th>Employee Address</th>
+        <th>Employee Designation</th>  
         <th>Actions</th>  
     </tr>  
     </thead>  
@@ -22,8 +23,9 @@
     <tr>  
         <td>{{ employee.eid }}</td>  
         <td>{{ employee.ename }}</td>  
-        <td>{{ employee.eemail }}</td>  
-        <td>{{ employee.econtact }}</td>  
+        <td>{{ employee.eemail }}</td> 
+        <td>{{ employee.eaddress }}</td> 
+        <td>{{ employee.edesignation }}</td>  
         <td>  
             <a href="/edit/{{ employee.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>  
             <a href="/delete/{{ employee.id }}">Delete</a>  
